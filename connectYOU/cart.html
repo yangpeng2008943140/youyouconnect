@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="scss/cart.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css"/>
+		<link rel="stylesheet" type="text/css" href="scss/sub/header.css" />
+		<link rel="stylesheet" type="text/css" href="scss/sub/footer.css" />
+		<script data-main="cart.js" src="js/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<!--// 头部-->
+		<div class="header">
+
+		</div>
+
+		<div class="content">
+			<div class="navigation">
+				<ul>
+					<li>
+						<a href="">您当前的位置：</a>
+					</li>
+					<li>
+						<a href="">购物车</a>
+					</li>
+
+				</ul>
+			</div>
+
+			<!--<div class="main">-->
+				<div class="cart-title">
+					<h5>
+						<i class="fa fa-cart-arrow-down">
+						</i>
+						购物车
+					</h5>
+				</div>
+
+				<div class="cart-empty">
+					<div class="empty-wrap">
+						<span>
+							<i class="fa fa-shopping-basket"></i>
+					 	</span>
+						
+						<div class="basket-right">
+							<span>您的购物车里还没有商品,</span>
+							<span>您可以:</span>
+							<p>将<span>收藏夹</span>中的商品添加进来，或者去看看 <span>商城 »</span></p>
+						</div>
+					</div>
+				</div>
+				
+				<!--cookie中有数据时显示这一块-->
+				<div class="cart-step">
+					<ul>
+						<li class="step">
+							<i>1</i><span>购物车</span>
+						</li>
+						<li>
+							<i class="fa fa-long-arrow-right"></i>
+						</li>
+						<li class="step">
+							<i>2</i><span>填写和提交订单信息</span>
+						</li>
+						<li>
+							<i class="fa fa-long-arrow-right"></i>
+						</li>
+						<li class="step">
+							<i>3</i><span>成功提交订单</span>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="cart-container">
+					<div class="choose-title">
+						<h4>已选择的商品</h4>
+					</div>
+					
+					<form action="">
+						<table cellspacing="0" id="tab">
+							<thead>
+								<tr class="first-tr">
+									<th class="first-th" colspan="2">商品</th>
+									<th>销售价</th>
+									<th>数量</th>
+									<th>优惠金额</th>
+									<th>id</th>
+									<th>小计</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							
+							<tbody id="box">
+								
+								
+							</tbody>
+							
+							<tfoot>
+								<tr class="price-total">
+									<td colspan="8">
+										<p>商品总金额：<span class="zongji">$3339.0</span></p>
+										<p>总金额：<span class="zongji">$3339.0</span></p>
+									</td>
+								</tr>
+								
+								<tr class="bill">
+									<td class="bill-left" colspan="4">
+										<span>清空购物车</span>
+										<span>凑单商品</span>
+									</td>
+									
+									<td class="bill-left bill-right" colspan="4">
+										<a href="">继续购物</a>
+										<a href="" class="account">下单结算</a>
+									</td>
+								</tr>
+							</tfoot>
+							
+						</table>
+					
+					</form>
+					
+					
+				</div>
+				
+				
+				
+				
+				
+				<div class="cart-history">
+					<h3>浏览过的商品</h3>
+					<div class="history-show">
+						<ul id="show-content">
+							
+						</ul>
+					</div>
+				</div>
+			<!--</div>-->
+		</div>
+
+		<div class="footer clear">
+
+		</div>
+
+	</body>
+	<!--//商品列表模板-->
+	<script type="text/html" id="temp_historylist">
+		<% for(var i=0;i<data.length;i++){%>
+		<li class="list-li fl">
+			<div class="list-img">
+				<img src=" <%=data[i].src %> " />
+			</div>
+			
+			<div class="list-info">
+				<p class="list-content">
+					<a href="">
+						<%=data[i].content %>
+					</a>
+				</p>
+
+				<p class="list-price">
+					<%=data[i].price %>
+				</p>
+				<p class="buy">
+					立即购买
+				</p>
+			</div>
+		</li>
+		<%}%>
+	</script>
+
+	<!--//购物车信息模板-->
+	<script type="text/html" id="temp_weibolist">
+		<% for(var i=0;i<data.length;i++){%>
+		<tr class="list-tr">
+			<td class="td1">
+				<img src=" <%=data[i].src %> " />
+			</td>
+			<td class="td2">
+				<p><a href=""><%=data[i].content %></a></p>
+				<div class="list-color">
+					平板颜色：<%=data[i].color %>
+				</div>
+			</td>
+			
+			<td class="td1"> 
+				<span><%=data[i].price %></span>
+			</td>
+			
+			<td class="td1 td3">
+				<input type="button" value="-" class="minus"/>
+				<input type="text" value=" <%=data[i].count %> "/>
+				<input type="button" value="+" class="add"/>
+			</td>
+			
+			<td class="td1">
+				<span><%=data[i].discount %></span>
+			</td>
+			
+			<td class="td1">
+				<span class="creditId"><%=data[i].credit %></span>
+			</td>
+			
+			<td class="td1">
+				<span><%=data[i].count*data[i].price %></span>
+			</td>
+			
+			<td class="td1">
+				<a href="">收藏</a>
+				<span>|</span>
+				<a href="javascript:void(0)" class="delete-btn">移除</a>
+			</td>
+			
+		</tr>
+		<%}%>
+	</script>
+</html>

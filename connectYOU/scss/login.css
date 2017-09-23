@@ -1,0 +1,195 @@
+.login-wrap {
+  width: 1200px;
+  height: 768px;
+  margin: 0 auto;
+}
+.login-wrap .current {
+  height: 38px;
+  padding: 0 5px;
+  line-height: 38px;
+  font-size: 14px;
+}
+.login-wrap .login-content {
+  height: 690px;
+  width: 1200px;
+  background: url(../img/subimg/login.jpg) no-repeat 0 center;
+}
+.login-wrap .login-content .login-form {
+  width: 340px;
+  height: 676px;
+  border: 2px solid #ccc;
+  margin-top: 10px;
+  float: right;
+}
+.login-wrap .login-content .login-form .form-caption {
+  width: 320px;
+  height: 44px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.login-wrap .login-content .login-form .form-caption h2 {
+  font: 400 24px/44px 'Microsoft Yahei';
+  color: #1566c0;
+}
+.login-wrap .login-content .login-form form {
+  width: 340px;
+  height: 281px;
+}
+.login-wrap .login-content .login-form form li {
+  height: 51px;
+  margin-bottom: 10px;
+}
+.login-wrap .login-content .login-form form li input {
+  width: 288px;
+  height: 26px;
+  padding: 1px 4px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+}
+.login-wrap .login-content .login-form form li p {
+  margin-left: 20px;
+  margin-top: 5px;
+  color: red;
+  display: none;
+}
+.login-wrap .login-content .login-form form li p span:nth-child(1) {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  background: darkred;
+  color: white;
+}
+.login-wrap .login-content .login-form form li p span:nth-child(2) {
+  margin-left: 8px;
+  height: 10px;
+  display: inline-block;
+}
+.login-wrap .login-content .login-form form li .code {
+  width: 80px;
+  height: 26px;
+  padding: 1px 4px;
+  border: 1px solid #ccc;
+}
+.login-wrap .login-content .login-form form li .code1 {
+  margin-left: 5px;
+  width: 40px;
+  font-size: 18px;
+}
+.login-wrap .login-content .login-form form li a {
+  font-size: 14px;
+}
+.login-wrap .login-content .login-form form li a:hover {
+  color: #0563c3;
+  text-decoration: underline;
+}
+.login-wrap .login-content .login-form form li input[type="checkbox"] {
+  width: 13px;
+  height: 32px;
+}
+.login-wrap .login-content .login-form form li label {
+  margin: 0 15px 0 5px;
+  vertical-align: top;
+  position: relative;
+  top: 6px;
+}
+.login-wrap .login-content .login-form form li button {
+  width: 80px;
+  height: 37px;
+  background: #e8520e;
+  margin-left: 20px;
+  border: 0;
+  font-size: 16px;
+  color: white;
+}
+.login-wrap .login-content .login-form form .last {
+  margin-bottom: 0;
+}
+.login-wrap .login-content .login-form .links {
+  width: 340px;
+  height: 254px;
+  padding: 15px 0;
+  border-top: 1px dotted #ccc;
+}
+.login-wrap .login-content .login-form .links h3 {
+  margin: 4px 0 0 24px;
+}
+.login-wrap .login-content .login-form .links ul {
+  width: 303px;
+  height: 156px;
+  margin-left: 24px;
+  margin-top: 5px;
+}
+.login-wrap .login-content .login-form .links ul li {
+  float: left;
+  width: 95px;
+  height: 35px;
+  padding: 2px 8px 2px 0;
+}
+.login-wrap .login-content .login-form .links ul li a {
+  width: 95px;
+  height: 35px;
+  display: inline-block;
+  background: url(../img/subimg/all_bg.png) no-repeat 0 -40px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(2) a {
+  background-position: 0 -80px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(3) a {
+  background-position: 0 -120px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(4) a {
+  background-position: 0 -160px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(5) a {
+  background-position: 0 -200px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(6) a {
+  background-position: 0 -240px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(7) a {
+  background-position: 0 -280px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(8) a {
+  background-position: 0 -320px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(9) a {
+  background-position: 0 -360px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(10) a {
+  background-position: 0 -400px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(11) a {
+  background-position: 0 -440px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(12) a {
+  background-position: 0 -480px;
+}
+.login-wrap .login-content .login-form .links ul li:nth-child(3n) {
+  padding-right: 0;
+}
+.login-wrap .login-content .login-form .form-bottom {
+  width: 300px;
+  height: 25px;
+  padding: 10px 20px;
+}
+.login-wrap .login-content .login-form .form-bottom h3 {
+  float: left;
+  color: #e73e31;
+  font: 14px/25px 'Microsoft Yahei';
+}
+.login-wrap .login-content .login-form .form-bottom button {
+  width: 88px;
+  height: 23px;
+  padding-right: 10px;
+  float: right;
+  border: 0;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+.login-wrap .login-content .login-form .form-bottom button:hover {
+  color: blue;
+}

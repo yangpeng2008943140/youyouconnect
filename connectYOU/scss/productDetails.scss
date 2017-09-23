@@ -1,0 +1,996 @@
+        %wid {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .banner-side {
+            left: 32px !important;
+        }
+        
+        #cover {
+            display: none;
+            position: absolute;
+            z-index: 5;
+            top: 50%;
+            left: 50%;
+            #cover-bg {
+                width: 100%;
+                height: 100%;
+                //                                      background-color: #aaa;
+                background: white;
+                opacity: 0.7;
+                -webkit-opacity: 0.7;
+                position: absolute;
+                z-index: 99999;
+                top: 0;
+                left: 0;
+            }
+            #cover-content {
+                background-color: #009900;
+                z-index: 8;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                z-index: 99999;
+                >img {
+                    width: 100%;
+                    height: 100%;
+                }
+                span {
+                    font-size: 30px;
+                    width: 50px;
+                    height: 50px;
+                    background: #f3f3f3;
+                    position: absolute;
+                    top: -13%;
+                    text-align: center;
+                    line-height: 50px;
+                    border-radius: 50%;
+                    left: 105%;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .content {
+            @extend %wid;
+            height: 6595px;
+            .navigation {
+                @extend %wid;
+                height: 38px;
+                ul {
+                    padding: 0 5px;
+                    li {
+                        float: left;
+                        line-height: 38px;
+                    }
+                }
+            }
+            .main {
+                @extend %wid;
+                height: 6560px;
+                /****************detail***********************/
+                .detail {
+                    @extend %wid;
+                    height: 657px;
+                    padding: 5px 0 15px 0;
+                    .detail-title {
+                        @extend %wid;
+                        height: 75px;
+                        margin-bottom: 10px;
+                        h2 {
+                            height: 43px;
+                            font-size: 24px;
+                            font-weight: bolder;
+                            color: #434A54;
+                        }
+                        p {
+                            color: #FF7300;
+                            font-size: 18px;
+                            height: 32px;
+                            line-height: 32px;
+                        }
+                    }
+                    .detail-content {
+                        @extend %wid;
+                        height: 554px;
+                        .detail-left {
+                            width: 402px;
+                            height: 554px;
+                            .detail-left-t {
+                                width: 402px;
+                                height: 400px;
+                                position: relative;
+                                .active {
+                                    width: 400px;
+                                    height: 300px;
+                                    position: absolute;
+                                    top: 47px;
+                                    img {
+                                        width: 400px;
+                                        height: 300px;
+                                    }
+                                    .zoom {
+                                        width: 24px;
+                                        height: 24px;
+                                        display: block;
+                                        position: absolute;
+                                        right: 0;
+                                        bottom: -53px;
+                                        background: url(../img/subimg/zoom.png) no-repeat 0 0;
+                                        &:hover {
+                                            background-position: 0 -24px;
+                                        }
+                                    }
+                                    .mirrle {
+                                        width: 200px;
+                                        height: 150px;
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0;
+                                        display: none;
+                                        background: rgba(0, 0, 0, 0.5);
+                                    }
+                                }
+                                .mirrle-box {
+                                    position: absolute;
+                                    top: 20px;
+                                    left: 420px;
+                                    width: 500px;
+                                    display: none;
+                                    height: 400px;
+                                    overflow: hidden;
+                                    img {
+                                        width: 1000px;
+                                        height: 800px;
+                                        position: absolute;
+                                    }
+                                }
+                            }
+                            .detail-left-m {
+                                width: 402px;
+                                height: 91px;
+                                margin-top: 20px;
+                                position: relative;
+                                .to-left {
+                                    width: 16px;
+                                    height: 64px;
+                                    position: absolute;
+                                    top: 13px;
+                                    z-index: 999;
+                                }
+                                .to-middle {
+                                    width: 368px;
+                                    height: 64px;
+                                    padding: 15px 16px 10px;
+                                    overflow: hidden;
+                                    border-top: 1px solid #e5e5e5;
+                                    border-bottom: 1px solid #e5e5e5;
+                                    position: relative;
+                                    ul {
+                                        width: 1200px;
+                                        height: 62px;
+                                        overflow: hidden;
+                                        position: absolute;
+                                        top: 15px;
+                                        left: 23px;
+                                        //                                      left: -100px;
+                                        //                                      display: none;
+                                        li {
+                                            float: left;
+                                            width: 62px;
+                                            height: 62px;
+                                            padding: 1px;
+                                            margin: 0 4px;
+                                            img {
+                                                width: 60px;
+                                                height: 60px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .to-right {
+                                    width: 16px;
+                                    height: 64px;
+                                    position: absolute;
+                                    top: 13px;
+                                    left: 386px;
+                                    z-index: 999;
+                                }
+                            }
+                            .detail-left-b {
+                                width: 402px;
+                                height: 28px;
+                                margin-top: 15px;
+                                text-align: center;
+                                a {
+                                    cursor: pointer;
+                                }
+                                a:nth-child(2) {
+                                    margin: 0 6px;
+                                }
+                            }
+                        }
+                        .detail-right {
+                            width: 780px;
+                            height: 554px;
+                            .detail-right-content {
+                                height: 362px;
+                                .detail-price {
+                                    height: 64px;
+                                    padding-bottom: 5px;
+                                    border: 1px solid #ccc;
+                                    margin-bottom: 10px;
+                                    border-bottom: 1px dotted #ddd;
+                                    p {
+                                        height: 24px;
+                                        line-height: 24px;
+                                        margin-bottom: 5px;
+                                        span:nth-child(1) {
+                                            position: relative;
+                                            top: -4px;
+                                        }
+                                        span:nth-child(2) {
+                                            font-size: 24px;
+                                            color: #D71B29;
+                                        }
+                                    }
+                                    ul {
+                                        height: 25px;
+                                        li {
+                                            height: 25px;
+                                            line-height: 25px;
+                                            float: left;
+                                            span {
+                                                margin: 0 8px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .detail-promotion {
+                                    height: 61px;
+                                    margin-bottom: 10px;
+                                    width: 780px;
+                                    ul {
+                                        height: 25px;
+                                        li {
+                                            float: left;
+                                            width: 48px;
+                                            height: 24px;
+                                            line-height: 24px;
+                                            padding: 0 10px;
+                                            border: 1px solid #ccc;
+                                            border-top: 2px solid #0000FF;
+                                            border-bottom: 0 none;
+                                            margin-bottom: -1px;
+                                            background: white;
+                                        }
+                                    }
+                                    .post {
+                                        height: 36px;
+                                        p {
+                                            border: 1px solid #CCCCCC;
+                                            height: 30px;
+                                            padding: 2px 10px;
+                                            span {
+                                                line-height: 30px;
+                                                font-size: 14px;
+                                                margin-right: 5px;
+                                            }
+                                            span:nth-child(1) {
+                                                display: inline-block;
+                                                width: 30px;
+                                                height: 20px;
+                                                line-height: 20px;
+                                                padding: 0 5px;
+                                                text-align: center;
+                                                background-color: #d80808
+                                            }
+                                        }
+                                    }
+                                }
+                                .detail-right-b {
+                                    width: 740px;
+                                    height: 161px;
+                                    padding: 25px 20px;
+                                    margin-top: 10px;
+                                    .detail-color {
+                                        p {
+                                            width: 740px;
+                                            height: 36px;
+                                            margin-bottom: 6px;
+                                            span {
+                                                font-size: 14px;
+                                                display: inline-block;
+                                                margin-top: 5px;
+                                            }
+                                        }
+                                    }
+                                    .detail-number {
+                                        width: 740px;
+                                        height: 26px;
+                                        margin-bottom: 20px;
+                                        p {
+                                            font-size: 14px;
+                                            line-height: 26px;
+                                            span {
+                                                margin-left: 28px;
+                                            }
+                                            button {
+                                                width: 24px;
+                                                height: 25px;
+                                            }
+                                            input {
+                                                width: 22px;
+                                                height: 21px;
+                                                padding-left: 8px;
+                                            }
+                                        }
+                                    }
+                                    .detail-links {
+                                        width: 740px;
+                                        height: 38px;
+                                        li {
+                                            float: left;
+                                            height: 38px;
+                                        }
+                                        .to-cart {
+                                            width: 137px;
+                                            margin-right: 15px;
+                                            background: #e03235;
+                                            a {
+                                                display: inline-block;
+                                                width: 137px;
+                                                height: 38px;
+                                                background: url(../img/subimg/detail.png) no-repeat 0 0;
+                                            }
+                                        }
+                                        .real {
+                                            width: 75px;
+                                            margin-right: 15px;
+                                            a {
+                                                width: 75px;
+                                                height: 38px;
+                                                display: inline-block;
+                                                background: url(../img/subimg/detail.png) no-repeat 0 -168px;
+                                            }
+                                        }
+                                        .weixin {
+                                            width: 90px;
+                                            margin-right: 15px;
+                                            a {
+                                                display: inline-block;
+                                                width: 90px;
+                                                height: 38px;
+                                                background: url(../img/subimg/weixin.png) no-repeat 0 0;
+                                            }
+                                        }
+                                        .consult {
+                                            a {
+                                                background: url(../img/subimg/detail.png) no-repeat 0 -260px;
+                                            }
+                                        }
+                                        .attention {
+                                            width: 72px;
+                                            a {
+                                                background: url(../img/subimg/detail.png) no-repeat 0 -306px;
+                                            }
+                                        }
+                                    }
+                                    .detail-share {
+                                        width: 279px;
+                                        height: 25px;
+                                        margin-top: 10px;
+                                        li {
+                                            height: 23px;
+                                            float: left;
+                                            width: 22px;
+                                            margin-right: 2px;
+                                            line-height: 23px;
+                                            a {
+                                                width: 22px;
+                                                height: 23px;
+                                                display: inline-block;
+                                                background: url(../img/subimg/newicon.png) no-repeat -102px -144px;
+                                            }
+                                        }
+                                        .to-share {
+                                            width: 48px;
+                                            padding-left: 10px;
+                                            a {
+                                                width: 48px;
+                                                background: none;
+                                            }
+                                        }
+                                        @for $i from 2 through 9 {
+                                            li:nth-child(#{$i}) a {
+                                                background-position: -58px+(-22px*$i) -144px;
+                                            }
+                                        }
+                                        .final {
+                                            width: 20px;
+                                            height: 20px;
+                                            border: 1px solid #ccc;
+                                            padding: 1px 0;
+                                            a {
+                                                background: url(../img/subimg/newicon.png) no-repeat -270px -254px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                /****************product-show***********************/
+                .product-show {
+                    @extend %wid;
+                    height: 5880px;
+                    .cols-show {
+                        width: 210px;
+                        height: 2634px;
+                        margin-top: 10px;
+                        >div {
+                            width: 208px;
+                            border: 1px solid #ccc;
+                            margin-bottom: 10px;
+                        }
+                        .side-weixin {
+                            height: 198px;
+                            padding-bottom: 16px;
+                            text-align: center;
+                            font-size: 14px;
+                            img {
+                                width: 180px;
+                                margin-bottom: 3px;
+                            }
+                        }
+                        .side-list {
+                            height: 89px;
+                            >h4 {
+                                font-size: 15px;
+                                color: #666;
+                                padding-left: 12px;
+                                border-bottom: 1px solid #ccc;
+                                height: 28px;
+                                line-height: 28px;
+                                font-weight: bold;
+                            }
+                            ul {
+                                width: 200px;
+                                height: 48px;
+                                padding: 6px 0 6px 8px;
+                                li {
+                                    float: left;
+                                    height: 18px;
+                                    width: 88px;
+                                    padding: 3px 6px;
+                                }
+                            }
+                        }
+                        .side-flagship {
+                            width: 210px;
+                            height: 400px;
+                            border: none;
+                            img {
+                                width: 210px;
+                                height: 400px;
+                            }
+                        }
+                        .side-rank {
+                            height: 485px;
+                            >h4 {
+                                height: 28px;
+                                padding-left: 12px;
+                                line-height: 28px;
+                                font-size: 15px;
+                                border-bottom: 1px solid #ccc;
+                                font-weight: bold;
+                            }
+                            .side-rank-list {
+                                height: 448px;
+                                width: 208px;
+                                >ul {
+                                    width: 203px;
+                                    height: 21px;
+                                    padding-left: 5px;
+                                    border-bottom: 1px solid #DEDFDE;
+                                    margin-top: 8px;
+                                    >li {
+                                        width: 58px;
+                                        height: 20px;
+                                        border: 1px solid #ccc;
+                                        border-bottom: none;
+                                        margin-right: 7px;
+                                        float: left;
+                                        text-align: center;
+                                        line-height: 20px;
+                                        border-color: #DEDFDE;
+                                        &:hover {
+                                            height: 21px;
+                                            background: white;
+                                            margin-bottom: -1px;
+                                        }
+                                    }
+                                }
+                                .product-ajax {
+                                    width: 198px;
+                                    padding: 0 5px;
+                                    height: 426px;
+                                    >ul {
+                                        width: 198px;
+                                        height: 426px;
+                                        li {
+                                            width: 198px;
+                                            height: 54px;
+                                            padding: 8px 0;
+                                            border-bottom: 1px solid #CCCCCC;
+                                            >span {
+                                                width: 18px;
+                                                height: 18px;
+                                                display: inline-block;
+                                                text-align: center;
+                                                vertical-align: top;
+                                                background: url(../img/subimg/circle.gif) no-repeat -24px 0;
+                                            }
+                                            img {
+                                                width: 50px;
+                                                height: 50px;
+                                                padding: 0 8px 0 2px;
+                                            }
+                                            div {
+                                                display: inline-block;
+                                                width: 110px;
+                                                height: 54px;
+                                                h4 {
+                                                    font-size: 8px;
+                                                    width: 110px;
+                                                    height: 35px;
+                                                    overflow: hidden;
+                                                    a {
+                                                        &:hover {
+                                                            color: blue;
+                                                            text-decoration: underline;
+                                                        }
+                                                    }
+                                                }
+                                                span {
+                                                    color: #D71B29;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .product-change,
+                                .product-class {
+                                    width: 198px;
+                                    height: 78px;
+                                    padding: 0 5px;
+                                    display: none;
+                                    p {
+                                        width: 198px;
+                                        height: 18px;
+                                        padding: 30px 0;
+                                        line-height: 18px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                        .side-promote {
+                            height: 29px;
+                            /*可以做成继承*/
+                            h3 {
+                                width: 196px;
+                                height: 28px;
+                                padding-left: 12px;
+                                font-size: 15px;
+                                font-weight: bold;
+                                line-height: 28px;
+                            }
+                        }
+                        .side-sales {
+                            height: 354px;
+                            h3 {
+                                width: 196px;
+                                height: 28px;
+                                padding-left: 12px;
+                                font-size: 15px;
+                                font-weight: bold;
+                                line-height: 28px;
+                            }
+                            .sales-list {
+                                width: 198px;
+                                height: 315px;
+                                padding: 5px;
+                                li {
+                                    width: 198px;
+                                    height: 18px;
+                                    padding: 8px 0;
+                                    border-bottom: 1px dotted #DEDEDE;
+                                    >span {
+                                        width: 18px;
+                                        height: 18px;
+                                        display: inline-block;
+                                        text-align: center;
+                                        vertical-align: top;
+                                        margin-right: 8px;
+                                        background: url(../img/subimg/circle.gif) no-repeat -24px 0;
+                                    }
+                                    img {
+                                        width: 50px;
+                                        height: 50px;
+                                        padding: 0 8px 0 2px;
+                                        display: none;
+                                    }
+                                    div {
+                                        display: inline-block;
+                                        width: 160px;
+                                        height: 18px;
+                                        overflow: hidden;
+                                        h4 {
+                                            font-size: 8px;
+                                            overflow: hidden;
+                                            a {
+                                                &:hover {
+                                                    color: blue;
+                                                    text-decoration: underline;
+                                                }
+                                            }
+                                        }
+                                        span {
+                                            color: #D71B29;
+                                        }
+                                    }
+                                    &:hover {
+                                        height: 54px;
+                                    }
+                                    &:hover>span {
+                                        margin-right: 0px;
+                                    }
+                                    &:hover img {
+                                        display: inline-block;
+                                    }
+                                    &:hover>div {
+                                        width: 110px;
+                                        height: 54px;
+                                    }
+                                    &:hover div h4 {
+                                        width: 110px;
+                                        height: 35px;
+                                    }
+                                }
+                                &:hover .not {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .side-photo {
+                            width: 210px;
+                            height: 500px;
+                            border: none;
+                            ul {
+                                li {
+                                    width: 210px;
+                                    height: 240px;
+                                    margin: 10px 0;
+                                }
+                            }
+                        }
+                        .side-history {
+                            margin-bottom: 0px;
+                            height: 849px;
+                            h3 {
+                                width: 196px;
+                                height: 28px;
+                                padding-left: 12px;
+                                font-size: 15px;
+                                font-weight: bold;
+                                line-height: 28px;
+                            }
+                            .history-list {
+                                width: 198px;
+                                height: 820px;
+                                padding: 0 5px;
+                                ul {
+                                    li {
+                                        width: 198px;
+                                        height: 141px;
+                                        padding: 8px 0;
+                                        border-bottom: 1px dotted #DEDEDE;
+                                        text-align: center;
+                                        a {
+                                            img {
+                                                width: 100px;
+                                                height: 100px;
+                                            }
+                                        }
+                                        >div {
+                                            width: 178px;
+                                            height: 34px;
+                                            padding: 5px 10px 0;
+                                            overflow: hidden;
+                                            &:hover a {
+                                                color: blue;
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .clearall {
+                            text-align: center;
+                            position: relative;
+                            top: -25px;
+                            border: none;
+                            a {
+                                font-size: 16px;
+                            }
+                            &:hover a {
+                                color: blue;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .cols-right {
+                        width: 980px;
+                        height: 5880px;
+                        .product-argument {
+                            width: 980px;
+                            height: 37px;
+                            border-bottom: 2px solid deepskyblue;
+                            margin: 10px 0;
+                            ul {
+                                li {
+                                    float: left;
+                                    width: 115px;
+                                    height: 37px;
+                                    margin-right: 2px;
+                                    background: #CCCCCC;
+                                    text-align: center;
+                                    line-height: 37px;
+                                    a {
+                                        font-size: 16px;
+                                    }
+                                }
+                                .cart-first {
+                                    background: #54A3F0;
+                                }
+                                .cart-right {
+                                    float: right;
+                                    background: #fc5910;
+                                    a {
+                                        color: white;
+                                    }
+                                    &:hover {
+                                        background: #fc4f07;
+                                    }
+                                }
+                            }
+                        }
+                        .product-brand {
+                            width: 978px;
+                            height: 48px;
+                            border: 1px solid #ccc;
+                            margin-bottom: 10px;
+                            background: #F8F8F8;
+                            ul {
+                                padding: 10px 15px;
+                                li {
+                                    float: left;
+                                    width: 315px;
+                                    height: 26px;
+                                    line-height: 26px;
+                                }
+                            }
+                        }
+                        .product-photo {
+                            width: 980px;
+                            height: 4158px;
+                            margin-bottom: 20px;
+                            ul {
+                                li {
+                                    width: 980px;
+                                    height: 450px;
+                                    text-align: center;
+                                    margin-bottom: 14px;
+                                    img {
+                                        width: 600px;
+                                        height: 450px;
+                                    }
+                                }
+                            }
+                        }
+                        .product-comment {
+                            width: 980px;
+                            height: 359px;
+                            h3 {
+                                width: 968px;
+                                height: 32px;
+                                padding-left: 10px;
+                                line-height: 32px;
+                                background: #efefef;
+                            }
+                            .comment-warp {
+                                width: 938px;
+                                height: 186px;
+                                padding: 20px;
+                                border-bottom: 1px solid #ccc;
+                                form {
+                                    width: 938px;
+                                    height: 176px;
+                                    p {
+                                        height: 26px;
+                                        line-height: 26px;
+                                        margin-bottom: 10px;
+                                        input[type="radio"] {
+                                            margin-left: 8px;
+                                        }
+                                        input[type="submit"] {
+                                            width: 47px;
+                                            height: 22px;
+                                            background: url(../img/subimg/video_bnt1.gif) no-repeat 0 0;
+                                            margin-left: 290px;
+                                        }
+                                        span {
+                                            color: red;
+                                        }
+                                    }
+                                    .words {
+                                        width: 758px;
+                                        height: 106px;
+                                        margin-bottom: 10px;
+                                        contenteditable: "true";
+                                        textarea {
+                                            width: 740px;
+                                            padding: 1px;
+                                            border: 2px solid #72AA22;
+                                            height: 100px;
+                                        }
+                                    }
+                                }
+                            }
+                            .comment-bottom {
+                                width: 938px;
+                                height: 78px;
+                                padding: 10px 20px;
+                                //                              background: blanchedalmond;
+                                ul {
+                                    height: 24px;
+                                    margin-bottom: 10px;
+                                    li {
+                                        float: left;
+                                        height: 24px;
+                                        line-height: 24px;
+                                        width: 83px;
+                                        margin-right: 5px;
+                                        text-align: center;
+                                        &:hover {
+                                            background: #9C9C9C;
+                                        }
+                                        &:hover a {
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                .comment-question {
+                                    margin-top: 30px;
+                                    height: 24px;
+                                    a {
+                                        line-height: 24px;
+                                    }
+                                }
+                            }
+                        }
+                        .product-banner {
+                            width: 967px;
+                            height: 635px;
+                            padding: 15px 0 15px 15px;
+                            border: 1px solid #C2CFDC;
+                            .banner-left {
+                                width: 34px;
+                                height: 636px;
+                                ul {
+                                    li {
+                                        width: 27px;
+                                        height: 94px;
+                                        padding: 11px 0 1px 0;
+                                        font-size: 14px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                            .banner-right {
+                                width: 930px;
+                                height: 634px;
+                                .nav {
+                                    width: 930px;
+                                    height: 634px;
+                                    overflow: hidden;
+                                    ul {
+                                        width: 6350px;
+                                        height: 634px;
+                                        li {
+                                            width: 930px;
+                                            height: 634px;
+                                            overflow: hidden;
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .product-guard {
+                            width: 948px;
+                            height: 384px;
+                            padding: 15px 0 15px 15px;
+                            border-left: 1px solid #CCCCCC;
+                            h3 {
+                                height: 30px;
+                                margin: 15px 0;
+                                line-height: 30px;
+                                border-bottom: 1px solid #CCCCCC;
+                            }
+                            .guard-table {
+                                width: 400px;
+                                height: 100px;
+                                padding: 40px 30px 20px 40px;
+                                border: 1px solid #CCCCCC;
+                                border-left: 3px solid #347ec7;
+                                //                              border-bottom: none;
+                                float: left;
+                                p {
+                                    width: 296px;
+                                    height: 80px;
+                                    padding-left: 104px;
+                                    background: url(../img/subimg/gw.jpg) no-repeat 0 0;
+                                }
+                            }
+                            @for $i from 2 through 4 {
+                                div:nth-child(#{$i}) p {
+                                    background-position: 0 (-82px*$i+82);
+                                }
+                            }
+                        }
+                        .product-sea {
+                            width: 900px;
+                            height: 50px;
+                            margin-right: 15px;
+                            padding: 30px;
+                            background: #DCDCDC;
+                            border-left: 1px solid #CCCCCC;
+                            h3 {
+                                width: 198px;
+                                height: 30px;
+                                display: inline-block;
+                                line-height: 40px;
+                                margin-right: 40px;
+                                font-size: 16px;
+                                font-weight: bold;
+                            }
+                            p {
+                                height: 40px;
+                                width: 650px;
+                                display: inline-block;
+                            }
+                        }
+                        .final-bottom {
+                            padding-top: 10px;
+                            width: 858px;
+                            height: 20px;
+                            padding-left: 90px;
+                            text-align: center;
+                            border-left: 1px solid #CCCCCC;
+                            border-bottom: 1px solid #CCCCCC;
+                        }
+                    }
+                }
+            }
+        }

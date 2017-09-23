@@ -1,0 +1,434 @@
+.header {
+  width: 100%;
+  height: 100%;
+}
+
+.top-wrap {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f9;
+}
+
+.header .header-top {
+  width: 1200px;
+  height: 35px;
+  border-bottom: 1px solid #f2f2f2;
+  margin: 0 auto;
+}
+
+.top-left {
+  float: left;
+  line-height: 36px;
+}
+
+.top-left span {
+  color: #8a6666;
+}
+
+.top-left a {
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.top-right {
+  width: 390px;
+  height: 36px;
+}
+
+.top-right li {
+  float: left;
+  line-height: 36px;
+}
+
+.coma {
+  width: 4px;
+  height: 36px;
+  padding: 0 6px;
+}
+
+.last:hover .time {
+  display: block;
+}
+
+.time {
+  position: absolute;
+  width: 110px;
+  padding: 13px 27px;
+  z-index: 99;
+  top: 30px;
+  right: 30px;
+  background: #4D4948;
+  color: #FFF;
+  line-height: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+/*--------------------------header-middle------------------------*/
+.middle-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.header .header-middle {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.header-middle h1 {
+  float: left;
+}
+
+.header-middle h1 img {
+  margin-top: 28px;
+}
+
+.header-middle h1 span {
+  display: inline-block;
+  width: 185px;
+  height: 50px;
+  background: url(../../img/subimg/sprite2.png) no-repeat 10px -50px;
+  border-left: 1px solid #d8d8d8;
+  margin: 12px 0 0 12px;
+  position: relative;
+  top: 13px;
+}
+
+.middle-certer {
+  float: left;
+  margin-left: 80px;
+  color: #999999;
+}
+
+.ui-widget {
+  width: 411px;
+}
+
+.middle-certer input {
+  width: 365px;
+  height: 34px;
+  border: 1px solid #ff5b01;
+  position: relative;
+  top: -13px;
+}
+
+.middle-certer button {
+  width: 44px;
+  height: 36px;
+  background: url(../../img/subimg/btn.png) no-repeat 0 0 #ff5b01;
+  border: none;
+  margin: 24px 0 0 -4px;
+  cursor: pointer;
+}
+
+.middle-certer p {
+  margin-top: -8px;
+}
+
+.middle-certer p span:nth-child(1) {
+  margin-left: 5px;
+  color: #ff5b01;
+}
+
+.middle-certer p span {
+  margin-right: 18px;
+}
+
+.middle-right {
+  width: 260px;
+  height: 50px;
+  background: url(../../img/subimg/promise.jpg) no-repeat 0 0;
+  margin: 25px 0 0 0;
+  float: right;
+}
+
+/*--------------------------header-foot------------------------*/
+.foot-wrap {
+  width: 100%;
+  height: 100%;
+  background: #1565ee;
+}
+
+.foot {
+  width: 1200px;
+  height: 38px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.foot ul li {
+  float: left;
+  line-height: 38px;
+  width: 150px;
+  text-align: center;
+}
+
+.foot ul li:nth-child(1) {
+  line-height: 38px;
+  width: 174px;
+}
+
+.foot ul li a {
+  color: white;
+  font-size: 16px;
+  width: 150px;
+  display: inline-block;
+  height: 38px;
+}
+
+.foot ul li:nth-child(1) a {
+  width: 174px;
+}
+
+.foot ul li a:hover {
+  background: #1252bf;
+}
+
+.foot ul li:nth-child(1) a span {
+  padding-left: 30px;
+  background: url(../../img/subimg/cat-ico.png) no-repeat 0 center;
+}
+
+.banner-side {
+  position: absolute;
+  top: 174px;
+  left: 32px;
+  width: 174px;
+  height: 360px;
+  background: black;
+  z-index: 999;
+  display: none;
+}
+
+.article {
+  width: 226px;
+  height: 360px;
+  padding: 0 30px;
+  background: gainsboro;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 174px;
+}
+.article li {
+  float: left;
+  height: 38px;
+  margin-right: 9px;
+}
+.article li:hover a {
+  color: #ff5b01;
+}
+
+.banner-side li {
+  line-height: 45px;
+}
+
+.banner-side > ul > li > div > a {
+  line-height: 45px;
+  background: url(../../img/subimg/cat-ico1.png) no-repeat 0 -281px;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 10px 0 57px;
+  text-align: left;
+}
+
+.banner-side li:nth-child(1) a {
+  background-position: 29px -281px;
+}
+
+.banner-side li:nth-child(2) a {
+  background-position: 27px -316px;
+}
+
+.banner-side li:nth-child(3) a {
+  background-position: 27px -351px;
+}
+
+.banner-side li:nth-child(4) a {
+  background-position: 27px -386px;
+}
+
+.banner-side li:nth-child(5) a {
+  background-position: 27px -423px;
+}
+
+.banner-side li:nth-child(6) a {
+  background-position: 27px -458px;
+}
+
+.banner-side li:nth-child(7) a {
+  background-position: 27px -493px;
+}
+
+.banner-side li:nth-child(8) a {
+  background-position: 27px -528px;
+}
+
+.banner-side li:hover {
+  background: gainsboro;
+}
+
+.banner-side > ul > li:hover > div > a {
+  color: #ff5b01;
+}
+
+.banner-side > ul > li:hover .article {
+  display: block;
+}
+
+.banner-side li:nth-child(1):hover a {
+  background-position: 29px 0px;
+}
+
+.banner-side li:nth-child(2):hover a {
+  background-position: 27px -34px;
+}
+
+.banner-side li:nth-child(3):hover a {
+  background-position: 27px -70px;
+}
+
+.banner-side li:nth-child(4):hover a {
+  background-position: 27px -106px;
+}
+
+.banner-side li:nth-child(5):hover a {
+  background-position: 27px -144px;
+}
+
+.banner-side li:nth-child(6):hover a {
+  background-position: 27px -178px;
+}
+
+.banner-side li:nth-child(7):hover a {
+  background-position: 27px -213px;
+}
+
+.banner-side li:nth-child(8):hover a {
+  background-position: 27px -246px;
+}
+
+.banner-side li:nth-child(8):hover {
+  height: 38px;
+}
+
+/*------------------side-bar-------------------------*/
+.side-bar {
+  background: #FFF;
+  border-left: 1px solid #E2E7EE;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 35px;
+  z-index: 99999;
+}
+.side-bar .item {
+  position: absolute;
+  top: 20%;
+  width: 35px;
+}
+.side-bar .item .register-side:hover .login {
+  display: block;
+}
+.side-bar .item .register-side .me a {
+  display: block;
+  width: 35px;
+  height: 60px;
+  overflow: hidden;
+  cursor: pointer;
+  background: url(../../img/subimg/layers.png) no-repeat -9px 10px;
+  text-indent: -999em;
+  overflow: hidden;
+}
+.side-bar .item .register-side .login {
+  width: 270px;
+  border: 1px solid #e2e7ee;
+  position: absolute;
+  top: 0;
+  left: -342px;
+  width: 270px;
+  padding: 15px 35px 20px;
+  background: #FFF;
+  display: none;
+}
+.side-bar .item .register-side .login .word {
+  font-size: 16px;
+}
+.side-bar .item .register-side .login input {
+  width: 270px;
+  height: 25px;
+  margin: 7px 0 10px 0;
+}
+.side-bar .item .register-side .login input[type="submit"] {
+  background: #206eef;
+  color: #FFF;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: none;
+}
+.side-bar .item .cart {
+  height: 73px;
+  margin: 20px 0;
+  position: relative;
+  width: 35px;
+  z-index: 9999;
+}
+.side-bar .item .cart:hover .cart-info {
+  display: block;
+}
+.side-bar .item .cart a {
+  background: url(../../img/subimg/layers.png) no-repeat 0 -70px;
+  height: 73px;
+  position: absolute;
+  width: 35px;
+  padding-left: 10px;
+  left: -10px;
+  text-indent: -999em;
+  overflow: hidden;
+}
+.side-bar .item .cart .cart-info {
+  width: 300px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  padding-top: 30px;
+  text-align: center;
+  left: -312px;
+  border: 1px solid blue;
+  background: #FFF;
+  display: none;
+}
+.side-bar .item .cart .cart-info p {
+  font-size: 16px;
+}
+.side-bar .item .phone a {
+  background: url(../../img/subimg/layers.png) no-repeat -9px -160px;
+  height: 45px;
+  width: 35px;
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+}
+.side-bar .item .taobao {
+  padding-left: 7px;
+  padding-top: 25px;
+}
+.side-bar .item .backtop {
+  padding-top: 100px;
+}
+.side-bar .item .backtop a {
+  width: 26px;
+  height: 26px;
+  display: block;
+  background: url(../../img/subimg/scrollTop.png) no-repeat 0 -47px;
+  margin: 0 auto;
+  text-indent: -999em;
+  overflow: hidden;
+}
+.side-bar .item .backtop a:hover {
+  background-position: 0 0px;
+}

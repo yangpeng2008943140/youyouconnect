@@ -1,0 +1,367 @@
+        %wid {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            @extend %wid;
+            //          height: 612px;
+            height: auto;
+            .navigation {
+                @extend %wid;
+                height: 38px;
+                ul {
+                    padding: 0 5px;
+                    li {
+                        float: left;
+                        line-height: 38px;
+                    }
+                }
+            }
+            //          .main {
+            //              @extend %wid;
+            //              height: 574px;
+            .cart-title {
+                @extend %wid;
+                height: 37px;
+                h5 {
+                    line-height: 37px;
+                    color: #6678ad;
+                    i {
+                        padding-left: 10px;
+                        font-size: 25px;
+                    }
+                    font-size: 22px;
+                }
+            }
+            .cart-empty {
+                width: 1198px;
+                height: 70px;
+                padding: 80px 0 90px;
+                display: none;
+                border: 1px solid #CCCCCC;
+                .empty-wrap {
+                    margin: 0 auto;
+                    width: 390px;
+                    >span {
+                        display: inline-block;
+                        width: 65px;
+                        height: 65px;
+                        position: relative;
+                        top: -15px;
+                        margin-right: 20px;
+                        i {
+                            font-size: 50px;
+                            line-height: 65px;
+                        }
+                    }
+                    .basket-right {
+                        width: 300px;
+                        height: 56px;
+                        overflow: hidden;
+                        display: inline-block;
+                        >span {
+                            color: #666666;
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+                        span:nth-child(2) {
+                            font-weight: normal;
+                        }
+                        P {
+                            font-size: 14px;
+                            color: #9C9C9C;
+                            margin-top: 5px;
+                            span {
+                                color: #0563c3;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            //              cookie中有值时显示
+            .cart-step {
+                width: 1200px;
+                height: 30px;
+                margin: 20px 0;
+                ul {
+                    li:nth-child(1) {
+                        background: #faa419;
+                        color: white;
+                        i {
+                            background: white;
+                            color: #faa419;
+                        }
+                    }
+                    li {
+                        float: left;
+                        height: 30px;
+                        width: 96px;
+                        font-size: 16px;
+                        line-height: 30px;
+                        .fa {
+                            font-size: 30px;
+                            margin-left: 30px;
+                            color: #CCCCCC;
+                        }
+                    }
+                    .step {
+                        width: 336px;
+                        background: #CCCCCC;
+                        color: #a8a8a8;
+                        i {
+                            width: 25px;
+                            height: 25px;
+                            display: inline-block;
+                            border-radius: 50%;
+                            text-align: center;
+                            background: #a8a8a8;
+                            position: relative;
+                            top: 2px;
+                            color: white;
+                            margin: 0 10px 0 10px;
+                        }
+                    }
+                }
+            }
+            .cart-container {
+                width: 1200px;
+                height: auto;
+                .choose-title {
+                    width: 1190px;
+                    height: 24px;
+                    padding: 0 0 5px 10px;
+                    h4 {
+                        line-height: 24px;
+                        font-size: 15px;
+                        color: #b77d66;
+                    }
+                }
+                form {
+                    width: 1200px;
+                    height: auto;
+                    table {
+                        width: 1199px;
+                        height: auto;
+                        border: 1px solid #CCCCCC;
+                        tr {
+                            th {
+                                font-size: 14px;
+                                width: 98px;
+                                height: 34px;
+                                padding: 1px;
+                            }
+                        }
+                        .first-tr {
+                            width: 1199px;
+                            height: 37px;
+                            background: #DCDCDC;
+                            .first-th {
+                                width: 596px;
+                            }
+                        }
+                        #box {
+                            width: 1199px;
+                            height: auto;
+                            border: 1px solid red;
+                            margin: 0 auto;
+                            .list-tr {
+                                width: 1199px;
+                                height: 105px;
+                                .td1 {
+                                    width: 98px;
+                                    text-align: center;
+                                    height: 82px;
+                                    padding: 15px 0 8px 0;
+                                    img {
+                                        width: 80px;
+                                        height: 80px;
+                                        border: 1px solid #CCCCCC;
+                                    }
+                                    a {
+                                        &:hover {
+                                            color: blue;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                .td2 {
+                                    width: 499px;
+                                    height: 82px;
+                                    padding: 15px 0 8px 0;
+                                    p {
+                                        height: 20px;
+                                    }
+                                    .list-color {
+                                        width: 84px;
+                                        height: 20px;
+                                        padding: 0 6px 0;
+                                    }
+                                }
+                                .td3 {
+                                    input {
+                                        width: 20px;
+                                        height: 21px;
+                                        border: 1px solid #CCCCCC;
+                                    }
+                                    input[type="button"] {
+                                        &:hover {
+                                            cursor: pointer;
+                                            background: #666666;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        tfoot {
+                            .price-total {
+                                text-align: right;
+                                width: 1199px;
+                                height: 98px;
+                                td {
+                                    p:nth-child(1) {
+                                        font-size: 16px;
+                                        span {
+                                            font-size: 14px;
+                                            color: red;
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                    p:nth-child(2) {
+                                        margin-top: 20px;
+                                        font-size: 16px;
+                                        span {
+                                            font-size: 25px;
+                                            color: red;
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            .bill {
+                                width: 1199px;
+                                height: 62px;
+                                background: #DCDCDC;
+                                .bill-left {
+                                    width: 768px;
+                                    height: 42px;
+                                    padding: 10px 15px;
+                                    span {
+                                        width: 82px;
+                                        height: 25px;
+                                        margin-right: 10px;
+                                        display: inline-block;
+                                        text-align: center;
+                                        line-height: 25px;
+                                        background: white;
+                                        cursor: pointer;
+                                        &:hover {
+                                            background: #d0770a;
+                                        }
+                                    }
+                                }
+                                .bill-right {
+                                    width: 370px;
+                                    text-align: right;
+                                    a {
+                                        line-height: 43px;
+                                        &:hover {
+                                            color: blue;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    .account {
+                                        width: 143px;
+                                        height: 42px;
+                                        display: inline-block;
+                                        text-align: center;
+                                        font-size: 15px;
+                                        background: #f4212b;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cart-history {
+                width: 1198px;
+                height: 283px;
+                border: 1px solid #CCCCCC;
+                margin-top: 10px;
+                h3 {
+                    padding: 0 15px;
+                    width: 1168px;
+                    height: 37px;
+                    line-height: 37px;
+                    color: #7baed9;
+                }
+                .history-show {
+                    width: 1194px;
+                    height: 236px;
+                    padding: 5px 2px;
+                    #show-content {
+                        width: 1194px;
+                        height: 236px;
+                        margin: 0 auto;
+                        .list-li {
+                            width: 206px;
+                            height: 98px;
+                            margin: 10px 16px;
+                            .list-img {
+                                width: 96px;
+                                height: 96px;
+                                display: inline-block;
+                                float: left;
+                                border: 1px solid #CCCCCC;
+                                img {
+                                    width: 96px;
+                                    height: 96px;
+                                }
+                            }
+                            .list-info {
+                                width: 101px;
+                                height: 98px;
+                                display: inline-block;
+                                margin-left: 7px;
+                                float: right;
+                                .list-content {
+                                    width: 101px;
+                                    height: 40px;
+                                    overflow: hidden;
+                                    a {
+                                        font-size: 14px;
+                                        &:hover {
+                                            color: #0080d4;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                .list-price {
+                                    width: 101px;
+                                    height: 33px;
+                                    line-height: 33px;
+                                    color: #fe5e00;
+                                }
+                                .buy {
+                                    width: 101px;
+                                    height: 25px;
+                                    line-height: 25px;
+                                    text-align: center;
+                                    background: #fe5e00;
+                                    cursor: pointer;
+                                    color: white;
+                                    &:hover {
+                                        background: #e04b0a;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //          }
+        }

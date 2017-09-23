@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="scss/register.css"/>
+		<link rel="stylesheet" type="text/css" href="scss/sub/header.css" />
+		<link rel="stylesheet" type="text/css" href="scss/sub/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css"/>
+		<script data-main="register.js" src="js/require.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		
+		<div class="header">
+			
+		</div>
+		
+		<div class="register">
+			<div class="current">
+				<p>您当前的位置：  </p>
+			</div>
+			<div class="register-wrap fl">
+				<div class="register-form">
+					<div class="caption">
+						<h2>用户注册</h2>
+					</div>
+					
+					<form action="index.html" method="get">
+						<ul>
+							<li class="form-item">
+								<label for="username"><span>*</span>登录账号  :</label>
+								<input type="text" name="" id="username" value="" placeholder="用户名/邮箱/手机号，最少4个字符"/>
+								<p class="user-p"><span>!</span><span>账号格式不正确！！</span></p>
+							</li>
+							
+							<li class="form-item">
+								<label for="pass"><span>*</span>密码  :</label>
+								<input type="text" name="" id="pass" value="" placeholder="6-20个字符"/>
+								<p class="pass-p"><span>!</span><span>密码格式不正确！！</span></p>
+							</li>
+							
+							<li class="form-item">
+								<label for="pass"><span>*</span>密码强度  :</label>
+								<button type="button" class="btn" id="lower">低</button><button type="button" class="btn" id="middle">中</button><button type="button" class="btn" id="upper">高</button>
+							</li>
+							
+							
+							<li class="form-item">
+								<label for="repass"><span>*</span>确认密码  :</label>
+								<input type="text" name="" id="repass" value="" placeholder="再次填写密码"/>
+								<p class="repass-p"><span>!</span><span>确认密码与密码不相等！！</span></p>
+							</li>
+							
+							<li class="form-item">
+								<label for="code"><span>*</span>验证码  :</label>
+								<input type="text" name="" id="code" class="code" value="" placeholder="填写验证码"/>
+								<input type="text" name="" id="num" value="h7f4" class="code"/>
+								<a href="" class="random">看不清楚?换一个</a>
+								<p class="code-p"><span>!</span><span>验证码不正确！！</span></p>
+							</li>
+							
+							
+							
+							<li class="form-item sure">
+								<label for=""></label>
+								<input type="checkbox" name="" class="check" value=""/>
+								<span> 我已阅读并同意 </span>
+								<a href="">会员注册协议</a>
+								<span>和</span>
+								<a href="">隐私保护政策</a>
+							</li>
+							
+							
+							<li class="form-item last">
+								<label for="pass"></label>
+								<button name="" id="sub"/>注册</button>
+							</li>
+						</ul>
+					</form>
+					
+				</div>
+			</div>
+			
+			<div class="form-side fr">
+				<span>已经有会员帐号请直接登录</span>
+				<button id="regiter">转到登录页</button>
+			</div>
+		</div>
+		
+		
+		
+		<div class="footer">
+			
+		</div>
+	</body>
+</html>

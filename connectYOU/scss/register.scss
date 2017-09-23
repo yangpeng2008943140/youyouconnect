@@ -1,0 +1,155 @@
+%mar {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.register {
+    @extend %mar;
+    height: 500px;
+    .current {
+        height: 38px;
+        padding: 0 5px;
+        line-height: 38px;
+        font-size: 14px;
+    }
+    .register-wrap {
+        width: 630px;
+        height: 462px;
+        .register-form {
+            width: 626px;
+            height: 448px;
+            border: 2px solid #ccc;
+            margin-bottom: 10px;
+            .caption {
+                width: 606px;
+                height: 44px;
+                line-height: 44px;
+                padding-left: 20px;
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 10px;
+                h2 {
+                    font: 400 24px/44px 'Microsoft Yahei';
+                    color: #1566c0;
+                }
+            }
+            form{
+                width: 626px;
+                height: 342px;
+                height: 403px;
+                li{
+                    height: 51px;
+                    margin-bottom: 10px;
+                    label{
+                        display: inline-block;
+                        width: 145px;
+                        height: 32px;
+                        line-height: 32px;
+                        text-align: right;
+                        overflow: hidden;
+                        font-size: 16px;
+                        span{
+                            color: #ef4521;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                    input{
+                        vertical-align: top;
+                        width: 288px;
+                        height: 26px;
+                        line-height: 26px;
+                        border: 1px solid #ccc;
+                        padding: 1px 4px;
+                        font-size: 15px;
+                        
+                    }
+                    button{
+                        vertical-align: top;
+                        position: relative;
+                        top: 5px;
+                        border: none;
+                        width: 60px;
+                        height: 30px;
+                    }
+                    .code{
+                        width: 80px;
+                    }
+                    a{
+                        margin: 0 4px;
+                        vertical-align: top;
+                        position: relative;
+                        top: 6px;
+                        color: #0563c3
+                    }
+                    .check{
+                        width: 13px;
+                        height: 32px;
+                    }
+                    >span{
+                        position: relative;
+                        top: -12px;
+                    }
+                    #sub{
+                        width: 80px;
+                        height: 37px;
+                        background: #fc5910;
+                        text-align: center;
+                    }
+                    p{
+                        margin-left: 150px;
+                        margin-top: 5px;
+                        color: red;
+                        display: none;
+                        span:nth-child(1){
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            text-align: center;
+                            display: inline-block;
+                            background: darkred;
+                            color: white;
+                        }
+                         span:nth-child(2){
+                            margin-left: 8px;
+                            height: 10px;
+                            display: inline-block;
+                        }
+                    }
+                    #num{
+                        width: 40px;
+                        font-size: 16px;
+                    }
+                }
+                .sure{
+                    margin-bottom: 0;
+                }
+                .last{
+                    height: 37px;
+                    position: relative;
+                    top: -13px;
+                }
+            }
+        }
+    }
+    .form-side{
+        width: 499px;
+        height: 43px;
+        padding:40px 20px 170px 25px;
+        border-left: 1px dotted #ccc;
+        span{
+            font-size: 14px;
+            line-height: 40px;
+        }
+        button{
+            width: 142px;
+            height: 42px;
+            background: #ca1823;
+            border: 0;
+            color: white;
+            cursor: pointer;
+            &:hover{
+                background: #e2232c;
+            }
+        }
+    }
+}

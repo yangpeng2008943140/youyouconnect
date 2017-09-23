@@ -1,0 +1,690 @@
+        %wid {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            @extend %wid;
+            height: 3320px;
+            .navigation {
+                @extend %wid;
+                height: 38px;
+                ul {
+                    padding: 0 5px;
+                    li {
+                        float: left;
+                        line-height: 38px;
+                    }
+                }
+            }
+            .main {
+                @extend %wid;
+                height: 3280px;
+                /****************detail***********************/
+                /****************product-show***********************/
+                .product-show {
+                    @extend %wid;
+                    height: 3280px;
+                    .cols-show {
+                        width: 210px;
+                        height: 2634px;
+                        margin-top: 10px;
+                        >div {
+                            width: 208px;
+                            border: 1px solid #ccc;
+                            margin-bottom: 10px;
+                        }
+                        .side-weixin {
+                            height: 198px;
+                            padding-bottom: 16px;
+                            text-align: center;
+                            font-size: 14px;
+                            img {
+                                width: 180px;
+                                margin-bottom: 3px;
+                            }
+                        }
+                        .side-list {
+                            height: 89px;
+                            >h4 {
+                                font-size: 15px;
+                                color: #666;
+                                padding-left: 12px;
+                                background: #F7F7F7;
+                                border-bottom: 1px solid #ccc;
+                                height: 28px;
+                                line-height: 28px;
+                                font-weight: bold;
+                            }
+                            ul {
+                                width: 200px;
+                                height: 48px;
+                                padding: 6px 0 6px 8px;
+                                li {
+                                    float: left;
+                                    height: 18px;
+                                    width: 88px;
+                                    padding: 3px 6px;
+                                }
+                            }
+                        }
+                        .side-flagship {
+                            width: 210px;
+                            height: 400px;
+                            border: none;
+                            img {
+                                width: 210px;
+                                height: 400px;
+                            }
+                        }
+                        .side-rank {
+                            height: 485px;
+                            >h4 {
+                                height: 28px;
+                                padding-left: 12px;
+                                line-height: 28px;
+                                font-size: 15px;
+                                border-bottom: 1px solid #ccc;
+                                font-weight: bold;
+                                background: #F7F7F7;
+                            }
+                            .side-rank-list {
+                                height: 448px;
+                                width: 208px;
+                                >ul {
+                                    width: 203px;
+                                    height: 21px;
+                                    padding-left: 5px;
+                                    border-bottom: 1px solid #DEDFDE;
+                                    margin-top: 8px;
+                                    >li {
+                                        width: 58px;
+                                        height: 20px;
+                                        border: 1px solid #ccc;
+                                        border-bottom: none;
+                                        margin-right: 7px;
+                                        float: left;
+                                        text-align: center;
+                                        line-height: 20px;
+                                        background: #F7F7F7;
+                                        border-color: #DEDFDE;
+                                        &:hover {
+                                            height: 21px;
+                                            background: white;
+                                            margin-bottom: -1px;
+                                        }
+                                    }
+                                }
+                                .product-ajax {
+                                    width: 198px;
+                                    padding: 0 5px;
+                                    height: 426px;
+                                    >ul {
+                                        width: 198px;
+                                        height: 426px;
+                                        li {
+                                            width: 198px;
+                                            height: 54px;
+                                            padding: 8px 0;
+                                            border-bottom: 1px solid #CCCCCC;
+                                            >span {
+                                                width: 18px;
+                                                height: 18px;
+                                                display: inline-block;
+                                                text-align: center;
+                                                vertical-align: top;
+                                                background: url(../img/subimg/circle.gif) no-repeat -24px 0;
+                                            }
+                                            img {
+                                                width: 50px;
+                                                height: 50px;
+                                                padding: 0 8px 0 2px;
+                                            }
+                                            div {
+                                                display: inline-block;
+                                                width: 110px;
+                                                height: 54px;
+                                                h4 {
+                                                    font-size: 8px;
+                                                    width: 110px;
+                                                    height: 35px;
+                                                    overflow: hidden;
+                                                    a {
+                                                        &:hover {
+                                                            color: blue;
+                                                            text-decoration: underline;
+                                                        }
+                                                    }
+                                                }
+                                                span {
+                                                    color: #D71B29;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .side-promote {
+                            height: 29px;
+                            /*可以做成继承*/
+                            h3 {
+                                width: 196px;
+                                height: 28px;
+                                padding-left: 12px;
+                                font-size: 15px;
+                                background: #F7F7F7;
+                                font-weight: bold;
+                                line-height: 28px;
+                            }
+                        }
+                        .side-sales {
+                            height: 354px;
+                            h3 {
+                                width: 196px;
+                                height: 28px;
+                                background: #F7F7F7;
+                                padding-left: 12px;
+                                font-size: 15px;
+                                font-weight: bold;
+                                line-height: 28px;
+                            }
+                            .sales-list {
+                                width: 198px;
+                                height: 315px;
+                                padding: 5px;
+                                li {
+                                    width: 198px;
+                                    height: 18px;
+                                    padding: 8px 0;
+                                    border-bottom: 1px dotted #DEDEDE;
+                                    >span {
+                                        width: 18px;
+                                        height: 18px;
+                                        display: inline-block;
+                                        text-align: center;
+                                        vertical-align: top;
+                                        margin-right: 8px;
+                                        background: url(../img/subimg/circle.gif) no-repeat -24px 0;
+                                    }
+                                    img {
+                                        width: 50px;
+                                        height: 50px;
+                                        padding: 0 8px 0 2px;
+                                        display: none;
+                                    }
+                                    div {
+                                        display: inline-block;
+                                        width: 160px;
+                                        height: 18px;
+                                        overflow: hidden;
+                                        h4 {
+                                            font-size: 8px;
+                                            overflow: hidden;
+                                            a {
+                                                &:hover {
+                                                    color: blue;
+                                                    text-decoration: underline;
+                                                }
+                                            }
+                                        }
+                                        span {
+                                            color: #D71B29;
+                                        }
+                                    }
+                                    &:hover {
+                                        height: 54px;
+                                    }
+                                    &:hover>span {
+                                        margin-right: 0px;
+                                    }
+                                    &:hover img {
+                                        display: inline-block;
+                                    }
+                                    &:hover>div {
+                                        width: 110px;
+                                        height: 54px;
+                                    }
+                                    &:hover div h4 {
+                                        width: 110px;
+                                        height: 35px;
+                                    }
+                                }
+                                &:hover .not {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .side-photo {
+                            width: 210px;
+                            height: 500px;
+                            border: none;
+                            ul {
+                                li {
+                                    width: 210px;
+                                    height: 240px;
+                                    margin: 10px 0;
+                                }
+                            }
+                        }
+                        .side-history {
+                            margin-bottom: 0px;
+                            height: 849px;
+                            h3 {
+                                width: 196px;
+                                background: #F7F7F7;
+                                height: 28px;
+                                padding-left: 12px;
+                                font-size: 15px;
+                                font-weight: bold;
+                                line-height: 28px;
+                            }
+                            .history-list {
+                                width: 198px;
+                                height: 820px;
+                                padding: 0 5px;
+                                ul {
+                                    li {
+                                        width: 198px;
+                                        height: 141px;
+                                        padding: 8px 0;
+                                        border-bottom: 1px dotted #DEDEDE;
+                                        text-align: center;
+                                        a {
+                                            img {
+                                                width: 100px;
+                                                height: 100px;
+                                            }
+                                        }
+                                        >div {
+                                            width: 178px;
+                                            height: 34px;
+                                            padding: 5px 10px 0;
+                                            overflow: hidden;
+                                            &:hover a {
+                                                color: blue;
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .clearall {
+                            text-align: center;
+                            position: relative;
+                            top: -25px;
+                            border: none;
+                            a {
+                                font-size: 16px;
+                            }
+                            &:hover a {
+                                color: blue;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    /*-----------------------------------------------*/
+                    %wid {
+                        width: 958px;
+                        height: 23px;
+                        margin-bottom: 8px;
+                    }
+                    .cols-right {
+                        width: 980px;
+                        height: 3270px;
+                        margin-top: 10px;
+                        .product-shift {
+                            width: 938px;
+                            height: 34px;
+                            padding: 0 20px;
+                            border-top: 1px solid #CCCCCC;
+                            border-left: 1px solid #CCCCCC;
+                            background: honeydew;
+                            h3 {
+                                width: 66px;
+                                height: 34px;
+                                line-height: 34px;
+                                display: inline-block;
+                            }
+                            .shift-middle {
+                                width: 83px;
+                                height: 34px;
+                                padding-left: 5px;
+                                line-height: 34px;
+                                display: inline-block;
+                            }
+                            .shift-right {
+                                height: 35px;
+                                width: 84px;
+                                font-size: 14px;
+                                color: #C2CFDC;
+                                display: inline-block;
+                                margin-left: 670px;
+                            }
+                        }
+                        .shift-item {
+                            width: 978px;
+                            height: 275px;
+                            border-left: 1px solid #CCCCCC;
+                            border-bottom: 1px solid #CCCCCC;
+                            margin-bottom: 10px;
+                            li:hover a {
+                                color: blue;
+                            }
+                            .choose {
+                                width: 958px;
+                                height: 23px;
+                                padding: 6px 10px 3px 10px;
+                                h3 {
+                                    width: 76px;
+                                    height: 18px;
+                                    margin-right: 3px;
+                                    margin-left: 10px;
+                                    line-height: 18px;
+                                }
+                            }
+                            .product-sort {
+                                width: 978px;
+                                height: 203px;
+                                margin-bottom: 5px;
+                                .product-brand {
+                                    @extend %wid;
+                                    height: 40px;
+                                    ul {
+                                        margin-left: 35px;
+                                        li {
+                                            float: left;
+                                            height: 40px;
+                                            margin-right: 50px;
+                                            img {
+                                                border: 1px solid #CCCCCC;
+                                            }
+                                        }
+                                        li:nth-child(2) {
+                                            width: 40px;
+                                            height: 20px;
+                                            background: blue;
+                                            border-radius: 7px;
+                                            text-align: center;
+                                            a {
+                                                color: white;
+                                            }
+                                        }
+                                    }
+                                }
+                                .product-fenlei {
+                                    @extend %wid;
+                                    ul {
+                                        li {
+                                            float: left;
+                                            width: 74px;
+                                            height: 20px;
+                                            line-height: 20px;
+                                            padding: 0 5px;
+                                            margin: 0 3px 3px 3px;
+                                            text-align: center;
+                                        }
+                                        li:nth-child(1) {
+                                            width: 76px;
+                                            height: 20px;
+                                            margin-right: 3px;
+                                        }
+                                        .nolimit {
+                                            background: blue;
+                                            display: inline-block;
+                                            width: 40px;
+                                            margin-right: 15px;
+                                            border-radius: 5px;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                                .product-bottom {
+                                    width: 980px;
+                                    height: 41px;
+                                    background: #f7f7f7;
+                                    margin-bottom: 10px;
+                                    .sort-bottom {
+                                        width: 332px;
+                                        height: 25px;
+                                        display: inline-block;
+                                        padding: 8px 0 8px 10px;
+                                        a {
+                                            width: 42px;
+                                            height: 23px;
+                                            display: inline-block;
+                                            border: 1px solid #CCCCCC;
+                                            margin-right: 5px;
+                                            text-align: center;
+                                            line-height: 23px;
+                                            &:hover {
+                                                color: #01adfb;
+                                            }
+                                        }
+                                        .unique {
+                                            width: 54px;
+                                        }
+                                        [name="sel"] {
+                                            position: relative;
+                                            top: 2px;
+                                            left: 2px;
+                                        }
+                                    }
+                                    .big-wrap {
+                                        width: 108px;
+                                        height: 22px;
+                                        display: inline-block;
+                                        padding: 11px 2px 8px 10px;
+                                        .big {
+                                            margin: 0 5px;
+                                            i {
+                                                margin-right: 3px;
+                                                font-size: 16px;
+                                                position: relative;
+                                                top: 2px;
+                                                color: blue;
+                                            }
+                                            &:hover {
+                                                color: cornflowerblue;
+                                            }
+                                        }
+                                    }
+                                    .sort-right {
+                                        width: 75px;
+                                        height: 22px;
+                                        padding-top: 10px;
+                                        margin-left: 420px;
+                                        //                                      background: saddlebrown;
+                                        display: inline-block;
+                                        a {
+                                            display: inline-block;
+                                            width: 12px;
+                                            height: 18px;
+                                            background: white;
+                                            padding: 1px 5px;
+                                            border: 1px solid #C5C5C5;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .product-list-wrap {
+                            width: 980px;
+                            height: 2496px;
+                            .product-list {
+                                width: 980px;
+                                height: 2496px;
+                                .list-li {
+                                    float: left;
+                                    width: 225px;
+                                    height: 339px;
+                                    padding: 15px 10px;
+                                    margin-bottom: 10;
+                                    cursor: pointer;
+                                    &:hover {
+                                        background: #f4f4f4;
+                                    }
+                                    .list-img {
+                                        width: 220px;
+                                        height: 220px;
+                                        margin: 0 2px 8px;
+                                        img {
+                                            margin-left: 2px;
+                                        }
+                                    }
+                                    .list-info {
+                                        width: 225px;
+                                        height: 81px;
+                                        overflow: hidden;
+                                        .list-content {
+                                            padding-top: 4px;
+                                            height: 50px;
+                                            width: 225px;
+                                            overflow: hidden;
+                                            a {
+                                                font-size: 12px;
+                                                text-decoration: none;
+                                                &:hover {
+                                                    color: #0195ff
+                                                }
+                                            }
+                                            .kk {
+                                                padding-left: 6px;
+                                                margin-top: 2px;
+                                                color: red;
+                                            }
+                                        }
+                                        .list-price {
+                                            width: 225px;
+                                            height: 27px;
+                                            span {
+                                                font-size: 18px;
+                                                color: red;
+                                            }
+                                            em {
+                                                font-size: 18px;
+                                                color: red;
+                                            }
+                                            .list-comment {
+                                                height: 27px;
+                                                width: 140px;
+                                                float: right;
+                                                text-align: right;
+                                                font-size: 8px;
+                                                line-height: 27px;
+                                                margin-right: 8px;
+                                                a {
+                                                    b {
+                                                        color: #e38e00;
+                                                    }
+                                                }
+                                                &:hover a {
+                                                    color: blue;
+                                                    text-decoration: underline;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .info-bottom {
+                                        width: 225px;
+                                        height: 25px;
+                                        line-height: 25px;
+                                        text-align: center;
+                                        .bottom-right {
+                                            width: 104px;
+                                            height: 25px;
+                                            margin-right: 6px;
+                                            background: blue;
+                                            display: inline-block;
+                                            border-radius: 5px;
+                                            color: white;
+                                        }
+                                        .bottom-left {
+                                            width: 98px;
+                                            height: 25px;
+                                            display: inline-block;
+                                            .tspan {
+                                                display: inline-block;
+                                                width: 46px;
+                                                height: 25px;
+                                                text-align: center;
+                                                line-height: 25px;
+                                                background: #f7f7f7;
+                                                &:hover {
+                                                    background: #ebebeb;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .success-info {
+                                position: absolute;
+                                top: 250px;
+                                left: 700px;
+                                width: 278px;
+                                height: 120px;
+                                border: 1px solid #CCCCCC;
+                                overflow: hidden;
+//                              background: #f3f3f3;
+                                background: #FFFFFF;
+                                z-index: 999;
+                                display: none;
+                                .success-header {
+                                    width: 278px;
+                                    height: 35px;
+                                    line-height: 35px;
+                                    font-size: 14px;
+                                     padding: 0 10px 0 10px;
+                                    background: #EFEFEF;
+                                    button{
+                                        margin-left: 160px;
+                                        cursor:pointer;
+                                        border: none;
+                                        &:hover{
+                                            background: #999999;
+                                        }
+                                    }
+                                }
+                                .success-content {
+                                    width: 278px;
+                                    height: 85px;
+                                    padding: 0 10px 0 10px;
+                                    p {
+                                        width: 278px;
+                                        height: 52px;
+                                        line-height: 52px;
+                                        font-size: 14px;
+                                        text-align: center;
+                                        color: #508524;
+                                    }
+                                    .success-btn {
+                                    width: 278px;
+                                    height: 26px;
+                                    input {
+                                        width: 80px;
+                                        height: 26px;
+                                        line-height: 26px;
+                                        text-align: center;
+                                        cursor: pointer;
+                                        border: none;
+                                    }
+                                    #goon{
+                                        margin-left: 50px;
+                                        background: #EEEEEE;
+                                    }
+                                    #successbtn{
+                                        background: #de4a09;
+                                        color: white;
+                                       
+                                    }
+                                }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
